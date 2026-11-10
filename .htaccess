@@ -1,0 +1,35 @@
+# Tizi Air · Apache / LiteSpeed settings for speed and SEO
+# Force HTTPS and the www host (change tizi-air.com to your domain)
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.tizi-air.com%{REQUEST_URI} [L,R=301]
+RewriteRule ^index\.html$ / [L,R=301]
+RewriteRule ^fr/index\.html$ /fr/ [L,R=301]
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml application/manifest+json
+</IfModule>
+
+# Long cache for images, video, fonts and scripts; short cache for pages
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|jpg|png|svg|mp4|woff2|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+AddType font/woff2 .woff2
+AddType application/manifest+json .webmanifest
