@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.tizi-air.com/sitemap.xml
+Sitemap: https://paraglidingmarrakech.vercel.app/sitemap.xml

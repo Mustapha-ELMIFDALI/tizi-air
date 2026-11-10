@@ -1,6 +1,6 @@
-# Tizi Air
+# Paragliding Marrakech
 
-> Tizi Air runs tandem paragliding flights from the Aguergour ridge, about 45 minutes south of Marrakech, Morocco. No experience is needed: each guest flies harnessed to an experienced pilot.
+> Paragliding Marrakech runs tandem paragliding flights from the Aguergour ridge, about 45 minutes south of Marrakech, Morocco. No experience is needed: each guest flies harnessed to an experienced pilot.
 
 ## Key facts
 - Flying site: Aguergour ridge, Al Haouz, Marrakech-Safi region, Morocco
@@ -16,7 +16,7 @@
 - Age and weight: children and older guests fly regularly; send each passenger's age and weight when booking
 - Language: English
 - Booking: online request form on the website, confirmed by email or WhatsApp; nothing is charged before confirmation
-- Email: book@tizi-air.example
+- Email: book@paraglidingmarrakech.example
 
 ## Pages
-- [Tizi Air](https://www.tizi-air.com/): flights, prices, the day step by step, safety, FAQ, booking
+- [Paragliding Marrakech](https://paraglidingmarrakech.vercel.app/): flights, prices, the day step by step, safety, FAQ, booking
